@@ -1,0 +1,8 @@
+get：通过url来传输地址，用户会显示在地址栏中，安全性不高，内容长度有限制。
+post：通过http request来请求报头，安全性高，内容长度没有限制。
+
+GET和POST还有一个重大区别，简单的说：
+
+GET产生一个TCP数据包；POST产生两个TCP数据包。
+get是header和date一起发送出去
+post是先发header再发date

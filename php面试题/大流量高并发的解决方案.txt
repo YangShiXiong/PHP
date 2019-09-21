@@ -1,0 +1,8 @@
+1，DNS负载均衡
+2，lvs负载均衡（Linux virtual service）（服务器负载均衡）
+3，集群服务器
+4，web服务器采用nginx
+5，静态缓存（tp，smarty）
+6，文件数据缓存（tp）
+7，内存数据缓存（memcache，redis）
+8，给数据库加索引

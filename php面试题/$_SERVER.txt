@@ -1,0 +1,7 @@
+$_SERVER['SERVER_ADDR'] 服务器端ip地址
+$_SERVER['SERVER_NAME']服务器名称
+$_SERVER['REQUEST_TIME']启动时间	
+$_SERVER['QUERY_STRING']问好后面数据
+$_SERVER['SERVER_REFERER'] 上级求情页面
+$_SERVER['HTTP_USER_AGENT'] 头部usagent信息
+$_SERVER['REMOTE_ADDR'] 客户端ip地址

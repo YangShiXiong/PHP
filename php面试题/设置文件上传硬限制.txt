@@ -1,0 +1,2 @@
+post_max_size(设置表单大小)
+upload_max_filesize(设置文件大小)

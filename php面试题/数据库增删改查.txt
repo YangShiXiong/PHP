@@ -1,0 +1,52 @@
+数据(data)是事实或观察的结果，是对客观事物的逻辑归纳
+
+查：
+<=:
+select EmployeeID,LastName,FirstName /*查询EmployeeID 小于4的数据*/
+from Employees
+where EmployeeID<=4
+
+like：
+select EmployeeID,LastName,FirstName /*查询LastName首字母为F的数据*/
+from Employees
+where LastName like 'F%'
+
+between:
+select EmployeeID,LastName,FirstName /*查询EmployeeID 在1到9之间的数据(包含1和9）*/
+from Employees
+where EmployeeID between 1 and 9
+
+and:
+select EmployeeID,LastName,FirstName /*查询TitleOfCourtesy='Mr.' 并且 LastName='Buchanan'*/
+
+from Employees
+where TitleOfCourtesy='Mr.' and LastName='Buchanan'
+
+删除重复：
+select distinct c_address from t_student;
+
+order by：
+select * from t_student order by c_age;
+select * from t_student order by c_age asc;/*升序*/
+select * from t_student order by c_age desc;/*降序*/
+
+group by  having：//having为条件，对group by 进行筛选
+
+select c_gender,group_concat(c_name) from t_student group by c_gender having c_gender = '女';
+
+select c_gender,group_concat(c_name) from t_student where c_age > 50 group by c_gender having c_gender = '女';
+
+插入数据：
+insert into Employees (FirstName,LastName)/*给特定的两列添加数据,此表的主键已经设置为自增，所以不需要添加值*/
+values('Tom','Jim')
+
+更改数据：
+update Employees
+set LastName='hello world'
+where EmployeeID=30 /*将EmployeeID=30的数据的LastName更改为hello world
+
+简单删除
+delete 
+where EmployeeID=32 /*删除EmployeeID=32的数据*/
+from Employees
+ 
